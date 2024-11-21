@@ -1,0 +1,20 @@
+/* style.css */
+
+.para {
+    background-color: lightpink;
+    font-family: 'Veranda', 'DeJavu Sans', sans-serif;
+}
+
+#first {
+    color: blue;
+    font-size: 36px;
+}
+
+.second {
+    font-size: 24px;
+}
+
+#second {
+    background-color: lightgreen;
+    font-weight: bold;
+}
