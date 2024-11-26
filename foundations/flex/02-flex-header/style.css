@@ -1,3 +1,11 @@
+body * {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+}
+
+
+
 .header  {
   font-family: monospace;
   background: papayawhip;
@@ -9,6 +17,8 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  align-content: center;
+  justify-content: center;
 }
 
 ul {
@@ -22,4 +32,6 @@ a {
   padding: 8px;
   /* this removes the line under the links */
   text-decoration: none;
+  justify-content: center;
+  margin-right: 32px;
 }
