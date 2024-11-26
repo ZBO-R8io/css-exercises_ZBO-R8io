@@ -2,10 +2,12 @@
 you'll learn about it later. */
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
 
-body {
+body * {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  display: flex;
+  flex-direction: row;
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  justify-content: right;
 }
 
 .logo {
@@ -27,6 +30,11 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  justify-content: left;
+}
+
+.blank {
+  flex: auto;
 }
 
 button {
@@ -35,14 +43,17 @@ button {
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  justify-content: right;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  padding: 16px;
 }
 
 ul {
   list-style-type: none;
+  align-items: center;
 }
