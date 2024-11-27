@@ -11,6 +11,7 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
+  flex: auto;
   align-items: center;
   justify-content: center;
 }
@@ -20,6 +21,14 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 4px;
+}
+
+.left {
+  
 }
 
 .icon {
@@ -33,6 +42,29 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 8px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 .close-button {
@@ -48,18 +80,25 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  margin: 8px;
 }
 
-button {
-  cursor: pointer;
-  padding: 8px 16px;
-  border-radius: 8px;
+.text {
+  max-width: 450px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin: 8px 0px;
 }
 
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
   color: white;
+  margin-right: 8px;
 }
 
 button.cancel {
